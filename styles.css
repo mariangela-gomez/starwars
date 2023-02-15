@@ -282,14 +282,15 @@ a:hover {
     .navbar-brand {
         display: none;
     }
+
+    .menu-responsive {
+        display: none;
+    }
 }
 
 
 @media(max-width: 600px) {
-    .title {
-    display: none;
-    }
-
+   
     #carouselHero {
         display: none;
     }
@@ -306,11 +307,11 @@ a:hover {
         display: flex;
     }
 
-    h1 {
+    .menu-responsive {
         font-family: 'Star Wars', sans-serif;
         color: yellow;
         text-align: center;
-        font-size: 5vh;
+        font-size: 1vh;
     }
 
 }
