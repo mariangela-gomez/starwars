@@ -12,11 +12,11 @@ body {
 
 /* Navbar */
 
-.title {
+h1 {
     font-family: 'Star Wars', sans-serif;
     color: yellow;
     text-align: center;
-    font-size: 60px;
+    font-size: 8vh;
 }
 
 .light-saber {
@@ -255,6 +255,10 @@ a:hover {
         0 0 100px #bd1019;
 }
 
+.navbar-brand {
+    display: none;
+}
+
 /* footer */
 
 .social:hover {
@@ -274,13 +278,16 @@ a:hover {
     .contact-wrapper>* {
         justify-content: center;
     }
+
+    .navbar-brand {
+        display: none;
+    }
 }
 
 
 @media(max-width: 600px) {
     .title {
-        font-size: 26px;
-        text-align: center;
+    display: none;
     }
 
     #carouselHero {
@@ -294,4 +301,16 @@ a:hover {
     .light-saber {
         display: none;
     }
+
+    .navbar-brand {
+        display: flex;
+    }
+
+    h1 {
+        font-family: 'Star Wars', sans-serif;
+        color: yellow;
+        text-align: center;
+        font-size: 5vh;
+    }
+
 }
