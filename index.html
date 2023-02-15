@@ -15,12 +15,12 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="./Image/R2D2.ico">
-    <!-- JS -->
-    <script defer src="./JS/script.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Star Wars</title>
 </head>
 
@@ -30,17 +30,31 @@
     <!-- Navbar -->
 
     <header>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="#">INICIO</a></li>
-                <li><a href="./HTML/galeria.html">GALERIA</a></li>
-                <li><a href="#">QUIENES SOMOS</a></li>
-                <li><a href="#">PRODUCTOS</a></li>
-                <li><a href="./HTML/contacto.html">CONTACTO</a></li>
-            </ul>
-            <div class="light-saber"></div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav fs-2 d-flex flex-fill">
+                    <li class="nav-item active">
+                        <a class="nav-link nav-item" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-item" href="./HTML/galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-item" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-item" href="./HTML/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
+    <div class="light-saber"></div>
+
 
     <!-- Carousel -->
 
@@ -63,50 +77,67 @@
             </div>
         </div>
     </div>
-    
+
     <!-- main  -->
 
-    <hr class="my-5" />
-    <section>
-        <img src="./Image/home1.png" alt="" id="starwars" class="starwars">
-        <div class="info">
-            <p>El argumento de las películas se sitúa hace mucho tiempo, en una galaxia muy, muy lejana. Allí se ha dado
-                durante siglos un enfrentamiento entre el "lado luminoso de la Fuerza" y el "lado oscuro". En conclusión
-                esta secuela nos cuenta cómo la República, que está formada por la mayoría de los sistemas planetarios
-                de la galaxia, se enfrenta a una terrible guerra, en parte por los manejos de Darth Sidious.
-            </p>
-        </div>
-    </section>
-    <section>
-        <div class="info">
-            <p>Narran el aprendizaje de Anakin Skywalker, y su perversión al lado oscuro , ya que este cae por
-                tentaciones fuertes para el ser humano, en este caso los sentimientos humanos. A la vez, se narra la
-                desaparición de la corrupta República Galáctica, y su sustitución por un Imperio Galáctico opresor, con
-                su emperador Palpatine y su aprendiz Darth Vader. Igualmente esta secuela nos lleva a reflexión de las
-                tentaciones mas profundas del amor hacia una persona muy cercana, y que estas no son realizadas a
-                nuestro modo.</p>
-        </div>
-        <img src="./Image/home2.png" alt="" id="darthvader" class="darthvader">
-    </section>
-    <section class="margin">
-        <img src="./Image/home3.png" alt="" id="obiwan" class="obiwan">
-        <div class="info">
-            <p>En la trilogía original, los caballeros Jedi han sido exterminados, y sólo un pequeño grupo de rebeldes
-                resiste aún al Imperio. La existencia de una terrible arma imperial, la Estrella de la Muerte, causa el
-                reclutamiento de un joven Luke Skywalker (hijo de Anakin) por parte de la Alianza Rebelde, y su
-                entrenamiento a Jedi por parte de Obi-Wan Kenobi y posteriormente por Yoda.</p>
-        </div>
-    </section>
-    <section>
-        <div class="info">
-            <p>Además del ámbito cinematográfico, la franquicia incluye una amplia variedad de productos tales como
-                novelas, series de televisión, videojuegos, historietas, atracciones de parques temáticos, juegos de
-                rol, de guerra o de miniaturas y juguetes, que componen una parte importante del conocido como universo
-                de Star Wars. Cada año la marca genera unos ingresos por la venta de sus productos en todo el mundo que
-                ascienden a más de 24.000 millones​.</p>
-        </div>
-        <img src="./Image/home4.png" alt="" id="yoda" class="yoda">
-    </section>
+    <main class="container pt-5">
+        <section class="card-main" data-aos="fade-right">
+            <img src="./Image/home1.png"  alt="" />
+            <div>
+                <p class="text-white">
+                    El argumento de las películas se sitúa hace mucho tiempo, en una galaxia muy, muy lejana. Allí se ha
+                    dado durante siglos un enfrentamiento entre el "lado luminoso de la Fuerza" y el "lado oscuro". En
+                    conclusión esta secuela nos cuenta cómo la República, que está formada por la mayoría de los
+                    sistemas planetarios de la galaxia, se enfrenta a una terrible guerra, en parte por los manejos de
+                    Darth Sidious.
+                </p>
+            </div>
+        </section>
+
+        <section class="card-main" data-aos="fade-left">
+            <img src="./Image/home2.png" alt="" />
+            <div>
+                <p class="text-white">
+                    Narran el aprendizaje de Anakin Skywalker, y su perversión al lado oscuro , ya que este cae por
+                    tentaciones fuertes para el ser humano, en este caso los sentimientos humanos. A la vez, se narra la
+                    desaparición de la corrupta República Galáctica, y su sustitución por un Imperio Galáctico opresor,
+                    con su emperador Palpatine y su aprendiz Darth Vader. Igualmente esta secuela nos lleva a reflexión
+                    de las tentaciones mas profundas del amor hacia una persona muy cercana, y que estas no son
+                    realizadas a nuestro modo.
+                </p>
+            </div>
+        </section>
+
+        <section class="card-main" data-aos="fade-right">
+            <img src="./Image/home3.png" alt="" />
+            <div>
+                <p class="text-white">
+                    En la trilogía original, los caballeros Jedi han sido exterminados, y sólo un pequeño grupo de
+                    rebeldes resiste aún al Imperio. La existencia de una terrible arma imperial, la Estrella de la
+                    Muerte, causa el reclutamiento de un joven Luke Skywalker (hijo de Anakin) por parte de la Alianza
+                    Rebelde, y su entrenamiento a Jedi por parte de Obi-Wan Kenobi y posteriormente por Yoda.
+                </p>
+            </div>
+        </section>
+
+        <section class="card-main" data-aos="fade-left">
+            <img src="./Image/home4.png" alt="" />
+            <div>
+                <p class="text-white">
+                    Además del ámbito cinematográfico, la franquicia incluye una amplia variedad de productos tales como
+                    novelas, series de televisión, videojuegos, historietas, atracciones de parques temáticos, juegos de
+                    rol, de guerra o de miniaturas y juguetes, que componen una parte importante del conocido como
+                    universo de Star Wars. Cada año la marca genera unos ingresos por la venta de sus productos en todo
+                    el mundo que ascienden a más de 24.000 millones​.
+                </p>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- Footer -->
+
     <footer class="text-center text-white">
         <div class="container">
             <div class="mt-5">
@@ -141,9 +172,6 @@
             <hr class="my-5" />
             <div class="text-center mb-5 fs-2">
                 <a href="" class="text-white me-4">
-                    <i class="bi bi-facebook social"></i>
-                </a>
-                <a href="" class="text-white me-4">
                     <i class="bi bi-twitter social"></i>
                 </a>
                 <a href="" class="text-white me-4">
@@ -161,6 +189,10 @@
             <a class="text-white" href="#">Mariangela Gomez 2023</a>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
